@@ -5,7 +5,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
      <style>
        .copyright {
-         position: relstive;
+         position: relative;
          top: 10px;
          left: 10px;
        }
@@ -13,16 +13,19 @@
   </head>
   
   <body>
+    <!-- Navigation Bar -->
+    {% include 'nav.html' %}
+    
     <!-- Logo -->
     <div class = "container">
-      <div class="px-4 pt-5 my-5 text-center pt-0 mt-0 pb-0 mb-0">
+      <div class="px-4 py-8 my-5 text-center pb-0 mb-0">
       <h1 class="display-4 fw-bold text-body-emphasis">DUSE</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Unleash Your Inner Shopaholic Demon!</p>
       </div>
-      <div class="overflow-hidden" style="max-height: 70vh;">
+      <div class="overflow-hidden" style="max-height: 100vh;">
         <div class="container px-5" >
-          <img src="https://f56b5e93-24f9-46ae-9791-060009824fdd-00-2mbbnuu9blv2l.spock.repl.co/static/Banner_Women.jpg" alt="Woman Holding Shopping bags" width="700" height="500" >
+          <img src="https://f56b5e93-24f9-46ae-9791-060009824fdd-00-2mbbnuu9blv2l.spock.repl.co/static/Banner_Women.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Woman Holding Shopping bags" width="700" height="500" >
         </div>
       </div>
     </div>
@@ -40,33 +43,29 @@
     </div>
     </div>
     
-    <!-- <div>
-    <p>{{items}}</p>
-    </div> -->
-    
     <!-- Clothing -->
     <div class = "container">
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-center mr-0 pr-0">
       <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
           <a href="{{ url_for('clothing') }}">
            <img src="https://f56b5e93-24f9-46ae-9791-060009824fdd-00-2mbbnuu9blv2l.spock.repl.co/static/Dress.jpg"
-            width="250" height="250" />
+            width="250" height="250" style="border-radius:20px;" />
           </a>
         </div>
         <h3 class="fs-2 text-body-emphasis">Clothing</h3>
       </div>
       <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
           <img src="https://f56b5e93-24f9-46ae-9791-060009824fdd-00-2mbbnuu9blv2l.spock.repl.co/static/Shoes.jpg"
-            width="250" height="250" />
+            width="250" height="250" style="border-radius:20px;" />
         </div>
         <h3 class="fs-2 text-body-emphasis">Shoes</h3>
       </div>
       <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
           <img src="https://f56b5e93-24f9-46ae-9791-060009824fdd-00-2mbbnuu9blv2l.spock.repl.co/static/Accesories.jpg"
-            width="250" height="250"  />
+            width="250" height="250" style="border-radius:20px;"  />
         </div>
         <h3 class="fs-2 text-body-emphasis">Accesories</h3>
       </div>
@@ -76,12 +75,11 @@
     <!-- To-do : Bootstarp  -->
     <div class = "container">
       <div class="d-flex gap-2 justify-content-center py-3">
-      <button class="btn btn-outline-secondary d-inline-flex align-items-center" type="button">
+      <a href="mailto:dusecustomercare@duse.com" class="btn btn-outline-secondary d-inline-flex align-items-center" type="button">
         Contact Us
-      </button>
+      </a>
       </div>
       <div class="copyright">
-        <!-- <p class="mb-3 text-body-secondary align-items-center">Copyright 2024, Duse</p> -->
         <p class="text-center mt-0 pt-0 text-body-secondary">© 2024 Duse, Inc</p>
       </div>
     </div>
