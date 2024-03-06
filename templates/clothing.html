@@ -20,7 +20,7 @@
       </div>
 
       <!-- Product Cards -->
-      {% for item in items %}
+      {% for item in clothings %}
       {% if loop.index0 % 3 == 0 %}
       <div class="row">
       {% endif %}
@@ -29,7 +29,7 @@
             <img src="https://f56b5e93-24f9-46ae-9791-060009824fdd-00-2mbbnuu9blv2l.spock.repl.co/static/Banner_Women.jpg" class="card-img-top" alt="Product Image">
             <div class="card-body">
               <h5 class="card-title">{{item['title']}}</h5>
-              <p class="card-text">${{item['price']}}</p>
+              <p class="card-text">$ {{item['price']}}</p>
               <p class="card-text">{{item['rating']}} <span>&#9733;</span></p>
             </div>
           </div>
